@@ -1,17 +1,17 @@
-export function MacNavigationWindow() {
+export function MacNavigationWindowDark() {
   return (
     <>
-      <div className="macNavigationWindow_container">
-        <div className="macNavigationWindow_header_container">
-          <div className="macNavigationWindow_header_btn_container">
-            <div className="macNavigationWindow_header_btn macNavigationWindow_red"></div>
-            <div className="macNavigationWindow_header_btn macNavigationWindow_yellow"></div>
-            <div className="macNavigationWindow_header_btn macNavigationWindow_green"></div>
+      <div className="macNavigationWindowDark_container">
+        <div className="macNavigationWindowDark_header_container">
+          <div className="macNavigationWindowDark_header_btn_container">
+            <div className="macNavigationWindowDark_header_btn macNavigationWindowDark_red"></div>
+            <div className="macNavigationWindowDark_header_btn macNavigationWindowDark_yellow"></div>
+            <div className="macNavigationWindowDark_header_btn macNavigationWindowDark_green"></div>
           </div>
         </div>
 
-        <div className="macNavigationWindow_body_container">
-          <div className="macNavigationWindow_body_content">
+        <div className="macNavigationWindowDark_body_container">
+          <div className="macNavigationWindowDark_body_content">
             <span style={{ fontWeight: "bold", fontSize: 30, fontFamily: "sans-serif" }}>
               Hello World !
             </span>
@@ -26,10 +26,10 @@ export function MacNavigationWindow() {
       </div>
 
       <style>{`
-        .macNavigationWindow_container {
+        .macNavigationWindowDark_container {
           width: 80%;
           min-height: 400px;
-          background-color: #FFFFFF;
+          background-color: #1C1C1E;
           border-radius: 10px;
           overflow: hidden;
           display: flex;
@@ -37,46 +37,46 @@ export function MacNavigationWindow() {
           box-shadow: 0 4px 10px #c4c4c4;
         }
 
-        .macNavigationWindow_header_container {
-          background-color: #F6F6F6;
+        .macNavigationWindowDark_header_container {
+          background-color: #2C2C2E;
           width: 100%;
           padding-top: 10px;
           padding-bottom: 10px;
         }
 
-        .macNavigationWindow_header_btn_container {
+        .macNavigationWindowDark_header_btn_container {
           width: 100%;
           padding-left: 10px;
           display: flex;
           gap: 8px;
         }
 
-        .macNavigationWindow_header_btn {
+        .macNavigationWindowDark_header_btn {
           width: 12px;
           height: 12px;
           border-radius: 50%;
         }
 
-        .macNavigationWindow_red {
+        .macNavigationWindowDark_red {
           background-color: #ff5f57;
         }
 
-        .macNavigationWindow_yellow {
+        .macNavigationWindowDark_yellow {
           background-color: #ffbd2e;
         }
 
-        .macNavigationWindow_green {
+        .macNavigationWindowDark_green {
           background-color: #28c840;
         }
 
-        .macNavigationWindow_body_container {
+        .macNavigationWindowDark_body_container {
           width: 100%;
           flex: 1;
           display: flex;
-          color: #1D1D1F;
+          color: #F5F5F7;
         }
 
-        .macNavigationWindow_body_content {
+        .macNavigationWindowDark_body_content {
           padding: 15px;
           text-align: justify;
         }
