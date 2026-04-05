@@ -82,6 +82,7 @@ export const array_components = [
           width: 100%;
           flex: 1;
           display: flex;
+          color: #4d4d4d;
         }
 
         .body_content {
