@@ -2,7 +2,7 @@
 
 Copiez et utilisez facilement des composants UI dans vos projets React.
 
-![Illustration](src/images/readme_illustrations/illustration1.png)
+![Illustration](src/images/readme_illustrations/Illustration1.png)
 
 👉 **Voir les composants et les copier ici :**  
 https://react-ui-components-five.vercel.app/
