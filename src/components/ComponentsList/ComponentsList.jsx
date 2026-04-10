@@ -8,6 +8,7 @@ import { array_components } from "../../array_components";
 
 export function ComponentsList() {
   const [copiedId, setCopiedId] = useState(null);
+  const componentsExemples = [...array_components].reverse();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,7 +35,7 @@ export function ComponentsList() {
 
   return (
     <>
-      {array_components.map((component) => (
+      {componentsExemples.map((component) => (
         <div key={component.id} className={s.container}>
           <div className={s.title_container}>
             <div className={s.title}>{component.title}</div>
@@ -68,6 +69,10 @@ export function ComponentsList() {
                     {copiedId === component.id ? "Copied !" : "Copy code"}
                   </button>
                 </div>
+                {component.images === true && <div className={s.img_information}>
+                  ⚠ Download the <a href={`/downloads/${component.images_folder}.zip`} download>folder with the images</a>, create an "images"
+                  folder, and copy it inside.
+                </div>}
               </div>
             </div>
           </div>

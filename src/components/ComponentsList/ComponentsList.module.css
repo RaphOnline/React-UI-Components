@@ -23,6 +23,8 @@
   min-height: 500px;
   background-color: #fafafa;
   border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .project_exemple {
   width: 50%;
@@ -84,6 +86,13 @@
 }
 .btn_copy:hover {
   background-color: #d6d6d6;
+}
+.img_information{
+  background-color: rgb(247, 225, 229);
+  width: 80%;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
 }
 
 /* Query */
