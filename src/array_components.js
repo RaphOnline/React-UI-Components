@@ -5,6 +5,7 @@ import { IphoneCardContact } from "./components/UIComponents/Cards/IphoneCardCon
 export const array_components = [
   {
     id: 1,
+    category: "Windows",
     title: "MacOs Style Window",
     subtitle: "A MacOs style window component for your React app.",
     render: <MacNavigationWindow />,
@@ -100,6 +101,7 @@ export const array_components = [
   },
   {
     id: 2,
+    category: "Windows",
     title: "MacOs Style Window Dark",
     subtitle: "A MacOs style window dark component for your React app.",
     render: <MacNavigationWindowDark/>,
@@ -195,6 +197,7 @@ export const array_components = [
   },
   {
     id: 3,
+    category: "Cards",
     title: "iPhone contact card",
     subtitle: "An iPhone contact card for your React application.",
     render: <IphoneCardContact />,

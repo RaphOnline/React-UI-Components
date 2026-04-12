@@ -8,7 +8,9 @@ import { array_components } from "../../array_components";
 
 export function ComponentsList() {
   const [copiedId, setCopiedId] = useState(null);
+  const [category, setCategory] = useState("All");
   const componentsExemples = [...array_components].reverse();
+  const filterComponents = category === "All" ? componentsExemples : componentsExemples.filter((component)=>component.category === category)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,7 +37,14 @@ export function ComponentsList() {
 
   return (
     <>
-      {componentsExemples.map((component) => (
+      <div className={s.category_btn_container}>
+        <button onClick={() => setCategory("All")}>All</button>
+        <button onClick={() => setCategory("Cards")}>Cards</button>
+        <button onClick={() => setCategory("Loader")}>Loader</button>
+        <button onClick={() => setCategory("Windows")}>Windows</button>
+      </div>
+
+      {filterComponents.map((component) => (
         <div key={component.id} className={s.container}>
           <div className={s.title_container}>
             <div className={s.title}>{component.title}</div>
@@ -69,10 +78,18 @@ export function ComponentsList() {
                     {copiedId === component.id ? "Copied !" : "Copy code"}
                   </button>
                 </div>
-                {component.images === true && <div className={s.img_information}>
-                  ⚠ Download the <a href={`/downloads/${component.images_folder}.zip`} download>folder with the images</a>, create an "images"
-                  folder, and copy it inside.
-                </div>}
+                {component.images === true && (
+                  <div className={s.img_information}>
+                    ⚠ Download the{" "}
+                    <a
+                      href={`/downloads/${component.images_folder}.zip`}
+                      download
+                    >
+                      folder with the images
+                    </a>
+                    , create an "images" folder, and copy it inside.
+                  </div>
+                )}
               </div>
             </div>
           </div>
