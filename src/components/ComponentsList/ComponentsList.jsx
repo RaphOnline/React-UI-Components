@@ -87,7 +87,7 @@ export function ComponentsList() {
                     >
                       folder with the images
                     </a>
-                    , create an "images" folder, and copy it inside.
+                    , create an "images" folder in the src folder, and copy it inside.
                   </div>
                 )}
               </div>

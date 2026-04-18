@@ -121,24 +121,27 @@ export function IphoneCardContact() {
           ); /* Editable: You can change the background color here  */
           color: white;
           width: 40%;
+          max-width: 360px;
+          min-width: 260px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           aspect-ratio: 9/16;
-          border-radius: 20px;
+          border-radius: clamp(16px, 2vw, 20px);
           overflow: hidden;
+          margin: 0 auto;
         }
 
         .icc_header {
           display: flex;
           flex-direction: column;
-          padding: 5px 10px 5px 10px;
-          gap: 15px;
+          padding: clamp(5px, 1.8vw, 10px);
+          gap: clamp(10px, 2.5vw, 15px);
         }
 
         .icc_avatar {
           position: absolute;
-          top: 40px;
+          top: clamp(24px, 5vw, 40px);
           left: 50%;
           transform: translateX(-50%);
           width: 100%;
@@ -149,26 +152,26 @@ export function IphoneCardContact() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding-top: 5px;
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-top: clamp(4px, 1vw, 5px);
+          padding-left: clamp(6px, 2vw, 10px);
+          padding-right: clamp(6px, 2vw, 10px);
         }
 
         .icc_phone_informations_part_one {
           color: black;
-          font-size: 15px;
+          font-size: clamp(12px, 2.5vw, 15px);
           font-weight: 600;
         }
 
         .icc_phone_informations_part_two {
           display: flex;
           align-items: center;
-          gap: 5px;
+          gap: clamp(3px, 1vw, 5px);
         }
 
         .icc_icon_header {
-          width: 15px;
-          height: 15px;
+          width: clamp(12px, 2.5vw, 15px);
+          height: clamp(12px, 2.5vw, 15px);
         }
 
         .icc_contact_informations_container {
@@ -179,8 +182,8 @@ export function IphoneCardContact() {
 
         .icc_contact_informations_back {
           background: rgba(255, 255, 255, 0.3);
-          width: 30px;
-          height: 30px;
+          width: clamp(24px, 6vw, 30px);
+          height: clamp(24px, 6vw, 30px);
           border-radius: 50%;
           display: flex;
           justify-content: center;
@@ -189,11 +192,12 @@ export function IphoneCardContact() {
 
         .icc_contact_informations_update {
           background: rgba(255, 255, 255, 0.2);
-          border-radius: 20px;
+          border-radius: clamp(14px, 3vw, 20px);
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 5px 10px 5px 10px;
+          padding: clamp(4px, 1.2vw, 5px) clamp(8px, 2.5vw, 10px);
+          font-size: clamp(12px, 2.5vw, 14px);
         }
 
         .icc_body {
@@ -201,32 +205,35 @@ export function IphoneCardContact() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 10px;
-          padding-top: 20px;
-          padding-bottom: 20px;
+          gap: clamp(8px, 2vw, 10px);
+          padding-top: clamp(16px, 4vw, 20px);
+          padding-bottom: clamp(16px, 4vw, 20px);
 
           backdrop-filter: blur(12px);
           background: rgba(255, 255, 255, 0.08);
-          border-top-left-radius: 40px;
-          border-top-right-radius: 40px;
+          border-top-left-radius: clamp(28px, 6vw, 40px);
+          border-top-right-radius: clamp(28px, 6vw, 40px);
           border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .icc_name {
-          font-size: 30px;
+          font-size: clamp(20px, 5vw, 30px);
           font-family: sans-serif;
           font-weight: bold;
+          text-align: center;
         }
 
         .icc_icons_body_container {
           display: flex;
-          gap: 15px;
+          gap: clamp(8px, 3vw, 15px);
+          flex-wrap: wrap;
+          justify-content: center;
         }
 
         .icc_icon_circle {
           background: rgba(255, 255, 255, 0.08);
-          width: 50px;
-          height: 50px;
+          width: clamp(40px, 10vw, 50px);
+          height: clamp(40px, 10vw, 50px);
           border-radius: 50%;
           display: flex;
           justify-content: center;
@@ -234,8 +241,8 @@ export function IphoneCardContact() {
         }
 
         .icc_icon_body {
-          width: 25px;
-          height: 25px;
+          width: clamp(18px, 5vw, 25px);
+          height: clamp(18px, 5vw, 25px);
           object-fit: contain;
           display: block;
         }
@@ -243,22 +250,22 @@ export function IphoneCardContact() {
         .icc_coordinates_container {
           width: 90%;
           background: rgba(255, 255, 255, 0.08);
-          border-radius: 15px;
-          padding: 10px;
+          border-radius: clamp(12px, 3vw, 15px);
+          padding: clamp(8px, 2.5vw, 10px);
           display: flex;
           flex-direction: column;
-          gap: 5px;
+          gap: clamp(4px, 1.5vw, 5px);
         }
 
         .icc_phone_number_container {
           border-bottom: 1px solid white;
-          padding-bottom: 5px;
+          padding-bottom: clamp(4px, 1.5vw, 5px);
         }
 
         .icc_phone_number,
         .icc_address {
           color: white;
-          font-size: 14px;
+          font-size: clamp(12px, 2.5vw, 14px);
           font-weight: bold;
         }
 
@@ -267,19 +274,20 @@ export function IphoneCardContact() {
         .icc_city {
           color: white;
           font-weight: 100;
-          font-size: 15px;
+          font-size: clamp(13px, 2.8vw, 15px);
+          line-height: 1.3;
         }
 
         /* Media query */
         @media (max-width: 768px) {
           .icc_container {
-            width: 60%;
+            max-width: 320px;
           }
         }
 
         @media (max-width: 480px) {
           .icc_container {
-            width: 80%;
+            max-width: 280px;
           }
         }
       `}</style>
