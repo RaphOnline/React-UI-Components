@@ -11,6 +11,7 @@ const informations_array = {
   city: "NY 10019",
 };
 
+// You can add links in this object array. In the image folder, you will find the icons corresponding to the most popular social networks. I recommend using only three social networks for this card.
 const social_links_array = [
   {
     social_name: "MyWebSite",
@@ -94,6 +95,7 @@ export function VintageCardContact() {
         .vcc_container {
           position: relative;
           width: 40%;
+          color: #242423;
           max-width: 360px;
           min-width: 260px;
           aspect-ratio: 9/16;

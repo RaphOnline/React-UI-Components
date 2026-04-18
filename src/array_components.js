@@ -487,8 +487,8 @@ export function IphoneCardContact() {
     images: true,
     images_folder: "Img_VintageCardContact",
     code_component: `// Image
-import Avatar from "../components/images/Img_VintageCardContact/avatar.png";
-import Computer from "../components/images/Img_VintageCardContact/computer.png";
+import Avatar from "../images/Img_VintageCardContact/avatar.png";
+import Computer from "../images/Img_VintageCardContact/computer.png";
 
 // Fill in this form with your information to have it appear on the card
 const informations_array = {
@@ -499,21 +499,22 @@ const informations_array = {
   city: "NY 10019",
 };
 
+// You can add links in this object array. In the image folder, you will find the icons corresponding to the most popular social networks. I recommend using only three social networks for this card.
 const social_links_array = [
   {
     social_name: "MyWebSite",
     link: "https://www.google.com",
-    social_img: require("../../../images/Img_VintageCardContact/website.png"),
+    social_img: require("../images/Img_VintageCardContact/website.png"),
   },
   {
     social_name: "LinkedIn",
     link: "https://www.linkedin.com",
-    social_img: require("../../../images/Img_VintageCardContact/linkedIn.png"),
+    social_img: require("../images/Img_VintageCardContact/linkedIn.png"),
   },
   {
     social_name: "GitHub",
     link: "https://www.github.com",
-    social_img: require("../../../images/Img_VintageCardContact/github.png"),
+    social_img: require("../images/Img_VintageCardContact/github.png"),
   },
 ];
 
