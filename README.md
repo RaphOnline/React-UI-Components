@@ -1,6 +1,7 @@
 # 🚀 React UI Components
 
 Copiez et utilisez facilement des composants UI dans vos projets React.
+(⚡ Attention: les projets cards comme windows ou loader peuvent être amélioré au fil du temps tout n'est pas parfait...)
 
 ![Illustration](src/images/readme_illustrations/Illustration1.png)
 
