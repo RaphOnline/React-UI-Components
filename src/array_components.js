@@ -220,7 +220,7 @@ import iMail from "../images/Img_IphoneCardContact/icon_mail.png";
 // You can replace the default avatar with your own avatar, 
 // which you can create from your photo as a Memoji on the website https://www.beautyplus.com/ai-filters/memoji-creator
 // Once created, rename your image avatar.png and place it in the Img_IphoneCardContact folder
-import Avatar from "../components/images/Img_IphoneCardContact/avatar.png";
+import Avatar from "../images/Img_IphoneCardContact/avatar.png";
 
 export function IphoneCardContact() {
   const [hour, setHour] = useState("");
